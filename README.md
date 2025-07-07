@@ -1,67 +1,121 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
-
 <p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExcnk3aWttY3ZyYnhwMW9tMXN1dG9kZzh1cGUzM2VzbHJzZjhvbnF6eSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/h4rJc4K3oioP32p667/giphy.gif" width="250">
 </p>
 
-## About Laravel
+<h1 align="center">Dashboard Manajemen Mahasiswa</h1>
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+<p align="center">
+  Aplikasi web sederhana untuk mengelola data mahasiswa (CRUD) yang dibangun dengan Laravel 10 dan dilengkapi antarmuka interaktif.
+</p>
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 🚀 **Fitur Utama**
+- **Manajemen Data Mahasiswa**: Tambah, Lihat, Edit, dan Hapus data secara dinamis.
+- **Antarmuka Interaktif**: Tabel data yang responsif dengan fitur pencarian dan *paging* menggunakan AJAX.
+- **Tumpukan Teknologi Modern**: Dibangun menggunakan teknologi terbaru untuk pengalaman pengembangan yang lebih baik.
 
-## Learning Laravel
+### 🛠️ **Tumpukan Teknologi**
+- **Backend**: Laravel 10, PHP 8.1
+- **Frontend**: Tailwind CSS, Alpine.js, Vite
+- **UI & Interaktivitas**: Bootstrap 5 (untuk Modal & Tabel), jQuery, DataTables
+- **Database**: MySQL
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+---
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## 📋 **Prasyarat**
+Pastikan perangkat lunak berikut sudah terinstal di komputer Anda:
+- PHP (v8.1+)
+- Composer
+- Node.js & NPM
+- Git
+- Server Lokal (Sangat direkomendasikan menggunakan **Laragon**)
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+---
 
-## Laravel Sponsors
+## ⚙️ **Panduan Instalasi (Langkah demi Langkah)**
+Ikuti panduan ini dengan teliti untuk menjalankan proyek tanpa masalah.
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+#### **1. Clone Repositori**
+Buka terminal (Git Bash atau Terminal Laragon) di dalam folder `www` Anda, lalu jalankan:
+```bash
+git clone [https://github.com/gempurbudianarki/tugas-dashboard-mahasiswa.git](https://github.com/gempurbudianarki/tugas-dashboard-mahasiswa.git)
+```
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTFkZ3FzZWJtaXZoZHVjYTNnYnduZnN6M3k4a3Q0bjM5bGVsM3Y1ZyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/llP42QiK44BIwYJj2M/giphy.gif" width="500">
 
-### Premium Partners
+#### **2. Masuk ke Folder Proyek**
+```bash
+cd tugas-dashboard-mahasiswa
+```
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[WebReinvent](https://webreinvent.com/)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Jump24](https://jump24.co.uk)**
-- **[Redberry](https://redberry.international/laravel/)**
-- **[Active Logic](https://activelogic.com)**
-- **[byte5](https://byte5.de)**
-- **[OP.GG](https://op.gg)**
+#### **3. Instal Dependensi (PHP & JS)**
+Jalankan kedua perintah ini secara berurutan. Proses ini mungkin memakan waktu beberapa menit.
+```bash
+# Instal paket PHP
+composer install
 
-## Contributing
+# Instal paket JavaScript
+npm install
+```
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbnZrcWdzbm5rZ2g1N3VnaGZudGxwZzNtb2J5dDQxMnF0NHNlYjRwNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o7bu3XilJ5BOiSGic/giphy.gif" width="500">
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+#### **4. Siapkan File Konfigurasi (`.env`)**
+Salin file contoh menjadi file konfigurasi utama aplikasi.
+```bash
+copy .env.example .env
+```
+Lalu, buat kunci aplikasi yang unik.
+```bash
+php artisan key:generate
+```
 
-## Code of Conduct
+#### **5. Konfigurasi Database**
+- Buka file `.env` yang baru saja Anda buat.
+- Sesuaikan pengaturan `DB_DATABASE`, `DB_USERNAME`, dan `DB_PASSWORD` dengan konfigurasi MySQL Anda di Laragon.
+- **Jangan lupa**: Buat sebuah database kosong di phpMyAdmin (misalnya dengan nama `db_mahasiswa`) sesuai nama yang Anda atur di `.env`.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+#### **6. Jalankan Migrasi & Seeder Database**
+Perintah ini akan membuat semua tabel dan mengisinya dengan 3 data mahasiswa sebagai contoh.
+```bash
+php artisan migrate --seed
+```
+<p align="center">
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExM3N2dTl2aDV1OWJmZmhjaXF3a2MwbXFjeHA2eGRuMGRkZWJ4NzFkMSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/UMi0n4G1jggx2/giphy.gif" width="400">
+</p>
+<h3 align="center">🎉 Selamat! Instalasi Selesai! 🎉</h3>
 
-## Security Vulnerabilities
+---
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## 🚀 **Menjalankan Aplikasi (Wajib Dibaca!)**
+Untuk menjalankan aplikasi Laravel modern, Anda perlu **2 Terminal** yang berjalan bersamaan.
 
-## License
+### **Terminal 1: Menjalankan Vite (Frontend)**
+Terminal ini bertugas menyajikan CSS & JavaScript agar tampilan tidak berantakan. **Biarkan terminal ini tetap berjalan selama Anda membuka aplikasi.**
+```bash
+npm run dev
+```
+<img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExd2szeW1qYnh4MW45M2c1bnJ4bXQ4ZGdjeHlndnRmc3NvdXY5OGo0NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/1gO2I7J9n1E3a4aU1J/giphy.gif" width="500">
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
-"# tugas-dashboard-mahasiswa" 
+### **Akses Aplikasi di Browser**
+- Pastikan Laragon Anda berjalan (`Start All`).
+- Buka browser dan akses alamat:
+  > **http://dashboard-mahasiswa.test**
+
+---
+
+## 🆘 **Troubleshooting (Panduan Anti-Error)**
+Jika Anda mengalami masalah seperti yang kita alami sebelumnya, ini solusinya:
+
+### **Masalah 1: Error `DNS_PROBE_FINISHED_NXDOMAIN`**
+> Halaman `.test` tidak dapat dijangkau.
+
+**Solusi:** Ini terjadi karena Laragon tidak punya izin untuk mengatur file `hosts` di Windows.
+- **WAJIB JALANKAN LARAGON SEBAGAI ADMINISTRATOR.**
+- Matikan Laragon > Klik kanan ikonnya > "Run as administrator" > Start All.
+
+### **Masalah 2: Tampilan Berantakan / Acak-acakan**
+> Halaman web muncul tapi hanya tulisan hitam putih tanpa desain.
+
+**Solusi:** Ini terjadi karena server Vite (frontend) tidak berjalan.
+- **PASTIKAN TERMINAL `npm run dev` SEDANG BERJALAN.**
+- Jika terminal itu tertutup, buka lagi dan jalankan ulang perintah `npm run dev`.
